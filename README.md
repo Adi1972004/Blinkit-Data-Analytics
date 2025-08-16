@@ -1,78 +1,135 @@
-### 📊 Blinkit Data Analytics
+# Blinkit Data Analytics Project
 
-[cite_start]This project presents a comprehensive analysis of Blinkit's sales, customer satisfaction, and inventory distribution[cite: 3, 10]. [cite_start]The goal is to uncover key insights and identify opportunities for optimization using Python, SQL, and Power BI[cite: 3].
-
----
-
-#### 📁 Project Files
-
--   [cite_start]🐍 **Blinkit Analysis in Python.ipynb**: A Jupyter Notebook containing the Python code for data cleaning, EDA, and generating key visualizations[cite: 1, 9].
--   [cite_start]📝 **BlinkIT_SQL_Query.sql**: SQL queries used for data cleaning, aggregation, and specific analyses[cite: 6].
--   📊 **BlinkIT_PowerBI_Dashboard.pbix**: The interactive Power BI dashboard file.
--   [cite_start]📄 **BlinkIT_PowerBI_Dashboard.pdf**: A PDF version of the Power BI dashboard[cite: 5].
--   [cite_start]📈 **Blinkit Analysis.pptx**: A presentation that outlines business requirements, KPIs, and charts[cite: 1, 2, 9, 10, 23, 24].
--   [cite_start]📄 **SQL Query Doc.pdf**: A document with detailed explanations of the SQL queries[cite: 31, 32, 104, 123, 191, 209].
--   🛒 **BlinkIT Grocery Data.xlsx - BlinkIT Grocery Data.csv**: The raw data file used for the analysis.
+A comprehensive analytics project analyzing Blinkit's grocery sales data using Python (Jupyter Notebook), SQL, and Power BI. The aim is to extract actionable insights on sales, customer satisfaction, and outlet performance, using real-world KPIs, advanced visualizations, and effective data engineering.
 
 ---
 
-#### 🎯 Business Requirements
+## Table of Contents
 
-[cite_start]The analysis was structured around three main areas[cite: 2, 10]:
-
-1.  **Key Performance Indicators (KPIs)**:
-    -   [cite_start]💲 **Total Sales**: The overall revenue generated from all items sold[cite: 5].
-    -   [cite_start]📈 **Average Sales**: The average revenue per sale[cite: 6].
-    -   [cite_start]🔢 **Number of Items**: The total count of different items sold[cite: 7].
-    -   [cite_start]⭐ **Average Rating**: The average customer rating for items sold[cite: 8].
-
-2.  **Granular Requirements**:
-    -   [cite_start]Analyze the impact of fat content on total sales and other KPIs[cite: 12, 13, 14, 18, 19, 20].
-    -   [cite_start]Identify the performance of different item types in terms of total sales and other KPIs[cite: 15, 16, 17].
-    -   [cite_start]Compare total sales across different outlets, segmented by fat content[cite: 18, 19, 20].
-    -   [cite_start]Evaluate how the age or type of outlet establishment influences total sales[cite: 21, 22].
-
-3.  **Chart Requirements**:
-    -   [cite_start]Analyze the correlation between outlet size and total sales[cite: 26, 27].
-    -   [cite_start]Assess the geographic distribution of sales across different outlet locations[cite: 28, 29].
-    -   [cite_start]Provide a comprehensive view of all key metrics broken down by different outlet types[cite: 30, 31].
+- [Overview](#overview)
+- [Business Objectives](#business-objectives)
+- [Files Included](#files-included)
+- [Setup & Installation](#setup--installation)
+- [Usage Instructions](#usage-instructions)
+- [Key KPIs & Analytical Requirements](#key-kpis--analytical-requirements)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
-#### 🔍 Analysis & Key Findings
+## Overview
 
-[cite_start]This project employed a multi-tool approach to achieve the objectives[cite: 1, 9, 23].
+This project delivers deep-dive analysis of Blinkit's sales data using industry-standard analytics workflows:
+- Data Cleaning & Exploration using Python and Jupyter notebooks
+- SQL for robust querying and KPI extraction
+- Power BI for dynamic dashboards and business reporting
 
-**🐍 Python Analysis**
--   [cite_start]Data Cleaning: The `Item Fat Content` column was standardized by replacing inconsistent values like 'LF', 'low fat', and 'reg' with 'Low Fat' and 'Regular'[cite: 36, 37, 38, 42, 49, 50, 51].
--   KPIs:
-    -   [cite_start]Total Sales: \$1.20M[cite: 61, 230, 285].
-    -   [cite_start]Average Sales: \$141[cite: 69, 231].
-    -   [cite_start]No. of Items: 8,523[cite: 77, 237].
-    -   [cite_start]Average Rating: 4.0[cite: 82, 84].
--   Charts: The Python notebook contains charts for:
-    -   [cite_start]Total Sales by Fat Content[cite: 12, 13, 85].
-    -   [cite_start]Total Sales by Item Type[cite: 15, 16, 98, 103].
-    -   [cite_start]Total Sales by Outlet Establishment Year[cite: 21, 22, 175, 181].
-    -   [cite_start]Sales by Outlet Size[cite: 26, 27, 182, 208].
-    -   [cite_start]Sales by Outlet Location[cite: 28, 29, 209, 215].
-
-**🗄️ SQL Queries**
--   [cite_start]The SQL queries were crucial for data cleaning and aggregation[cite: 36]. They were used to:
-    -   [cite_start]Update the `Item Fat Content` for consistency[cite: 39, 42].
-    -   [cite_start]Calculate KPIs like total sales, average sales, and average rating[cite: 54, 63, 71, 79].
-    -   [cite_start]Group and analyze sales by categories like `Item Type` and `Outlet Location Type`[cite: 99, 105, 110, 210, 217].
-    -   [cite_start]Perform a `PIVOT` operation to compare sales by fat content across different outlet locations[cite: 105, 115, 124, 125].
-
-**📈 Power BI Dashboard**
--   [cite_start]The interactive dashboard visually summarizes the findings from the Python and SQL analysis[cite: 5].
--   [cite_start]It features visualizations for all the required KPIs and charts, including a breakdown of metrics by `Outlet Type` [cite: 30, 216] [cite_start]and the percentage of sales by `Outlet Size`[cite: 26, 208].
+Business queries include trend analysis, item-level breakdowns, outlet segmentation, and more.
 
 ---
 
-#### 🚀 How to Use This Project
+## Business Objectives
 
-1.  **Clone the Repository**:
-    `git clone [repository_url]`
-2.  **Explore the Files**: Open the files to understand the data, code, and visualizations.
-3.  **Run the Analysis**: Use a Jupyter Notebook to run the Python file, a SQL client for the SQL queries, and Power BI Desktop to open the dashboard file.
+- **Understand overall sales metrics:** Total sales, average sales, customer ratings, and item counts.
+- **Evaluate performance by product and outlet characteristics:** Fat content, item type, location type, establishment year, outlet size/type.
+- **Optimize inventory and satisfaction measures through KPI trends.**
+
+---
+
+## Files Included
+
+- `BlinkIT-Grocery-Data.xlsx`: Main dataset
+- `Blinkit-Analysis-in-Python.ipynb`: Python/Jupyter code for data cleaning, EDA, and visualization
+- `BlinkIT_SQL_Query.sql`: Core SQL queries for all KPIs and business questions
+- `SQL-Query-Doc.pdf`: Business and technical documentation/explanations for each SQL query
+- `Blinkit-Analysis.pptx`: Executive summary with visuals and findings
+- `BlinkIT_PowerBI_Dashboard.pdf`: Power BI static dashboard
+
+---
+
+## Setup & Installation
+
+### Prerequisites
+
+- Python 3.x, with `pandas`, `numpy`, `matplotlib`, `seaborn`, `jupyter`
+- SQL Server, MySQL, PostgreSQL, or equivalent for running provided SQL scripts
+- Power BI Desktop (for viewing/modifying dashboards)
+  
+### Installation Steps
+Clone the repository
+git clone https://github.com/Adi1972004/Blinkit-Data-Analytics.git
+cd Blinkit-Data-Analytics
+
+Install Python dependencies
+pip install pandas numpy matplotlib seaborn jupyter
+
+Start Jupyter Notebook for python analysis
+jupyter notebook
+
+
+---
+
+## Usage Instructions
+
+1. **Explore the Dataset:** Open `BlinkIT-Grocery-Data.xlsx` for raw data.
+2. **Run Python Scripts:** Open `Blinkit-Analysis-in-Python.ipynb` with Jupyter Notebooks. Execute each cell sequentially to perform data cleaning, analysis, and visualization.
+3. **SQL Reporting:**  
+   - Import the data into your relational SQL database (table: blinkit_data).
+   - Run queries from `BlinkIT_SQL_Query.sql` (see explanations in `SQL-Query-Doc.pdf`) to generate all the required business KPIs and segmented reports.
+4. **Business Reporting:**  
+   - Review dashboards in `BlinkIT_PowerBI_Dashboard.pdf`.
+   - See summary, findings, and visualizations in `Blinkit-Analysis.pptx`.
+
+---
+
+## Key KPIs & Analytical Requirements
+
+| Analysis Item     | Description                                                      |
+|-------------------|------------------------------------------------------------------|
+| **Total Sales**   | Overall revenue generated from all items sold                    |
+| **Average Sales** | Average revenue per sale                                         |
+| **Item Count**    | Total number of item records/sales                               |
+| **Avg. Rating**   | Mean customer rating                                             |
+| **Sales by Fat Content** | Impact of Low Fat vs Regular products                      |
+| **Sales by Item Type**   | High/low-performing categories                            |
+| **Fat Content vs Outlet**| Location-based breakdown for fat content sales             |
+| **Sales by Outlet Establishment Year**| Effect of outlet age                        |
+| **Sales % by Outlet Size**| Contribution of small, medium, large outlets              |
+| **Sales by Location Type**| Urban/rural/geographic impact                            |
+| **All Metrics by Outlet Type**| Full KPI view per channel/store format                |
+
+_Refer to SQL scripts and documentation for technical details and logic explanations._
+
+---
+
+## Project Structure
+
+Blinkit-Data-Analytics/
+├── BlinkIT-Grocery-Data.xlsx
+├── Blinkit-Analysis-in-Python.ipynb
+├── BlinkIT_SQL_Query.sql
+├── SQL-Query-Doc.pdf
+├── Blinkit-Analysis.pptx
+├── BlinkIT_PowerBI_Dashboard.pdf
+└── README.md
+
+
+---
+
+## Contributing
+
+- Fork this repository and create a new branch for your feature or fix
+- Push changes and submit a pull request
+- Please describe any file/data modifications clearly
+
+---
+
+## License
+
+Educational and demo use only. See LICENSE file for further information.
+
+---
+
+**Contact:**  
+For support or questions, please create an issue on GitHub.
