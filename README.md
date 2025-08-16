@@ -1,4 +1,4 @@
-# Blinkit Data Analytics Project
+# Blinkit Data Analytics
 
 A comprehensive analytics project analyzing Blinkit's grocery sales data using Python (Jupyter Notebook), SQL, and Power BI. The aim is to extract actionable insights on sales, customer satisfaction, and outlet performance, using real-world KPIs, advanced visualizations, and effective data engineering.
 
