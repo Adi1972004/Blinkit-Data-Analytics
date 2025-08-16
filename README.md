@@ -106,12 +106,19 @@ _Refer to SQL scripts and documentation for technical details and logic explanat
 ## Project Structure
 
 Blinkit-Data-Analytics/
+
 ├── BlinkIT-Grocery-Data.xlsx           # Main grocery dataset for analysis (Excel)
+
 ├── Blinkit-Analysis-in-Python.ipynb    # Data analysis and visualization notebook (Python/Jupyter)
+
 ├── BlinkIT_SQL_Query.sql               # SQL queries for KPI and insights extraction
+
 ├── SQL-Query-Doc.pdf                   # SQL queries documentation and explanations (PDF)
+
 ├── Blinkit-Analysis.pptx               # Project summary and results (PowerPoint slides)
+
 ├── BlinkIT_PowerBI_Dashboard.pdf       # Power BI dashboard visuals (PDF)
+
 └── README.md                           # Project introduction and instructions
 
 
