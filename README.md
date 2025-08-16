@@ -105,30 +105,15 @@ _Refer to SQL scripts and documentation for technical details and logic explanat
 
 ## Project Structure
 
-Blinkit-Data-Analytics-Project/
-│
-├── data/
-│   └── BlinkIT-Grocery-Data.xlsx
-│       # Main grocery dataset containing all sales, product, outlet, and rating information.
-│
-├── notebooks/
-│   └── Blinkit-Analysis-in-Python.ipynb
-│       # Jupyter Notebook for data cleaning, analysis, EDA, and visualizations using Python (Pandas, matplotlib, seaborn).
-│
-├── sql/
-│   ├── BlinkIT_SQL_Query.sql
-│   │   # SQL scripts for cleaning, aggregating, and extracting KPIs and insights.
-│   └── SQL-Query-Doc.pdf
-│       # Documentation explaining the SQL queries, logic, and result interpretations.
-│
-├── reporting/
-│   ├── Blinkit-Analysis.pptx
-│   │   # PowerPoint presentation summarizing findings and visualizations for stakeholders.
-│   └── BlinkIT_PowerBI_Dashboard.pdf
-│       # Export of Power BI dashboard visualizations covering key metrics and granular insights.
-│
-└── README.md
-    # Project introduction, organization, usage instructions, and dependencies. (Add or update as needed.)
+Blinkit-Data-Analytics/
+├── BlinkIT-Grocery-Data.xlsx           # Main grocery dataset for analysis (Excel)
+├── Blinkit-Analysis-in-Python.ipynb    # Data analysis and visualization notebook (Python/Jupyter)
+├── BlinkIT_SQL_Query.sql               # SQL queries for KPI and insights extraction
+├── SQL-Query-Doc.pdf                   # SQL queries documentation and explanations (PDF)
+├── Blinkit-Analysis.pptx               # Project summary and results (PowerPoint slides)
+├── BlinkIT_PowerBI_Dashboard.pdf       # Power BI dashboard visuals (PDF)
+└── README.md                           # Project introduction and instructions
+
 
 
 
